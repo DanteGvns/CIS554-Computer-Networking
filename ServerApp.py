@@ -1,6 +1,10 @@
 import sys
 from socket import *
 
+#needed import for ctrl + c stopping
+import signal
+signal.signal(signal.SIGINT, signal.SIG_DFL)
+
 portNum = 54783
 severRunning = "The Sever is Running..."
 
